@@ -27,5 +27,5 @@ logit = LogisticRegression()
 logit.fit(X_train, y_train)
 
 # Save the model and vectorizer
-joblib.dump(logit, "your_model_filename.pkl")
-joblib.dump(vectorizer, "your_vectorizer_filename.pkl")
+joblib.dump(logit, "model_file.pkl")
+joblib.dump(vectorizer, "vectorizer_file.pkl")
