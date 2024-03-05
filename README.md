@@ -1,5 +1,5 @@
 
-```markdown
+
 # Malicious URL Detection
 
 A simple Flask web application for detecting whether a URL is malicious or not using a machine learning model.
