@@ -9,8 +9,8 @@ A simple Flask web application for detecting whether a URL is malicious or not u
 - `app.py`: Flask application script.
 - `static/`: Folder for static files (e.g., CSS).
 - `templates/`: Folder for HTML templates.
-- `your_model_filename.pkl`: Trained machine learning model file.
-- `your_vectorizer_filename.pkl`: TfidfVectorizer file.
+- `model_file.pkl`: Trained machine learning model file.
+- `vectorizer_file.pkl`: TfidfVectorizer file.
 - `data.csv`: Dataset file.
 - `requirements.txt`: List of Python packages and versions.
 
