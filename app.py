@@ -5,8 +5,8 @@ import joblib
 app = Flask(__name__)
 
 # Load the model and vectorizer
-model = joblib.load("your_model_filename.pkl")
-vectorizer = joblib.load("your_vectorizer_filename.pkl")
+model = joblib.load("model_file.pkl")
+vectorizer = joblib.load("vectorizer_file.pkl")
 
 @app.route('/predict', methods=['POST'])
 def predict():
