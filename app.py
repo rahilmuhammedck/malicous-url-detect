@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 
@@ -7,6 +7,10 @@ app = Flask(__name__)
 # Load the model and vectorizer
 model = joblib.load("model_file.pkl")
 vectorizer = joblib.load("vectorizer_file.pkl")
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -23,4 +27,4 @@ def predict():
     return jsonify({'prediction': int(prediction[0])})
 
 if __name__ == '__main__':
-    app.run(port=5000)  # Adjust the port if needed
+    app.run(debug=True)  # Enable debug mode for detailed error messages
